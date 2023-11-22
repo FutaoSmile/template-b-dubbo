@@ -1,0 +1,7 @@
+GET http://localhost:8080/user/detail/1
+
+###
+GET http://localhost:8080/user/exception
+
+###
+GET http://localhost:8080/user/1exception
