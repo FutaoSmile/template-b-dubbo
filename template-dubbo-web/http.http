@@ -1,4 +1,4 @@
-POST http://localhost:8080/login/username-pwd
+POST http://localhost:8080/template-dubbo-web/login/username-pwd
 Content-Type: application/json
 
 {
@@ -8,10 +8,10 @@ Content-Type: application/json
 
 
 ###
-GET http://localhost:8080/user/detail/1
+GET http://localhost:8080/template-dubbo-web/user/detail/1
 
 ###
-GET http://localhost:8080/user/exception
+GET http://localhost:8080/template-dubbo-web/user/exception
 
 ###
-GET http://localhost:8080/user/1exception
+GET http://localhost:8080/template-dubbo-web/user/1exception
