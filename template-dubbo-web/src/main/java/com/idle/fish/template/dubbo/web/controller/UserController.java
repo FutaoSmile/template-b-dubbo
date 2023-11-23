@@ -27,18 +27,16 @@ public class UserController {
     @Resource
     private UserAo userAo;
 
+    @LoginRequire
     @GetMapping("/detail/{id}")
     public UserDto getUserById(@PathVariable("id") Long id) {
         return userAo.detail(id);
     }
 
 
+    @LoginRequire(requireRoles = UserRoleEnum.NORMAL_USER)
     @GetMapping("/exception")
     public void exception() {
         throw LogicException.le("奇怪的事情发生了");
-    }
-
-    public static void main(String[] args) throws NoSuchMethodException {
-        AnnotationUtils.getAnnotation(UserController.class.getMethod("exception"), LoginRequire.class);
     }
 }

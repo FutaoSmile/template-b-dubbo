@@ -31,23 +31,11 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <version.basic>0.0.1-SNAPSHOT</version.basic>
         <version.template.dubbo>0.0.1-SNAPSHOT</version.template.dubbo>
-        <dubbo.version>2.7.23</dubbo.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-            <!--https://cn.dubbo.apache.org/zh-cn/overview/quickstart/java/spring-boot/-->
-            <dependency>
-                <groupId>org.apache.dubbo</groupId>
-                <artifactId>dubbo-spring-boot-starter</artifactId>
-                <version>${dubbo.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.dubbo</groupId>
-                <artifactId>dubbo-dependencies-zookeeper</artifactId>
-                <version>${dubbo.version}</version>
-                <type>pom</type>
-            </dependency>
+
 
             <dependency>
                 <groupId>com.idle.fish</groupId>
@@ -88,6 +76,11 @@
             <dependency>
                 <groupId>com.idle.fish</groupId>
                 <artifactId>basic-login</artifactId>
+                <version>${version.basic}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.idle.fish</groupId>
+                <artifactId>basic-dubbo</artifactId>
                 <version>${version.basic}</version>
             </dependency>
         </dependencies>

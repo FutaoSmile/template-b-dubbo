@@ -1,0 +1,2 @@
+dubboUserFilter=com.idle.fish.tamplate.basic.user.dubbo.UserDubboFilter
+asyncFilter=com.idle.fish.template.basic.dubbo.AsyncFilter
