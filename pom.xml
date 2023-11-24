@@ -35,8 +35,6 @@
 
     <dependencyManagement>
         <dependencies>
-
-
             <dependency>
                 <groupId>com.idle.fish</groupId>
                 <artifactId>template-dubbo-api</artifactId>
