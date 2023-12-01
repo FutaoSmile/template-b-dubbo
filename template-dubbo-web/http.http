@@ -1,9 +1,16 @@
-POST http://localhost:8080/template-dubbo-web/login/username-pwd
+GET http://localhost:8080/demo/test
 Content-Type: application/json
 
 {
-  "username": 1,
-  "password": 1
+  "data": "eyJ0aXRsZSI6IuWGhemDqOS4muWKoS3mtYvor5Xnjq/looPph43lkK8tMjAyMzA3MTgtMS3mtYvor5UiLCJ0eXBlIjoiUkVTVEFSVCJ9"
+}
+
+###
+GET http://localhost:8080/demo/exception
+Content-Type: application/json
+
+{
+  "data": "eyJ0aXRsZSI6IuWGhemDqOS4muWKoS3mtYvor5Xnjq/looPph43lkK8tMjAyMzA3MTgtMS3mtYvor5UiLCJ0eXBlIjoiUkVTVEFSVCJ9"
 }
 
 
